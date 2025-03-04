@@ -1,0 +1,56 @@
+@use 'extras/variables';
+
+.hero{ //Estilização do cabeçalho.
+    padding: 64px;
+    padding: 100px;
+    background-image: url(../images/penacony.png); //Imagem de fundo do hero(cabeçalho).
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+
+    &::before{ //Escurecer da imagem de fundo para ênfase no conteúdo.
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$textColorBlack;
+        content: '';
+        opacity: .5;
+    }
+
+    &__text{ //Estilização do texto.
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800px;
+        text-align: center;
+    }
+
+    &__logo{ //Estilização da foto de icon.
+        margin: 0 auto;
+        height: 100px;
+        display: block;
+        border: solid 1px variables.$textColorWhite;
+        border-radius: 100%;
+    }
+
+    @media (max-width: 640px){ //Responsivo - Smartphone.
+        padding: 40px 0;
+
+        &__logo{ //Redução do tamanho do icon.
+            height: 40px;
+        }
+
+        &__text{ //Redução do tamanho do texto.
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}

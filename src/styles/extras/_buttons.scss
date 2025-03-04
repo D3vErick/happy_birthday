@@ -1,0 +1,30 @@
+@use 'variables';
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10px;
+
+    &--primary{
+        color: variables.$textColorBlack;
+        background-color: variables.$buttonPrimary;
+
+        &:hover{
+            background-color: #ebcc1e;
+        }
+    }
+    
+    @media (max-width: 640px){ //Responsivo - Smartphone.
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px){ //Responsivo - Tablet.
+        display: flex;
+        align-items: center;
+    }
+}

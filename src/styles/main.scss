@@ -1,0 +1,28 @@
+@use 'hero'; //Importação do arquivo de estilo "hero" (cabeçalho).
+@use 'extras/infos_bar'; //Importação do arquivo de estilo "infos_bar" (informações do bloco de informações do evento).
+@use 'extras/buttons'; //Importação do arquivo de estilo "buttons" (Estilo dos botões).
+@use 'extras/variables'; //Importação do arquivo de variáveis.
+@use 'event'; //Importação do arquivo de estilização dos eventos.
+
+*{ //Reset css.
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; //Fonte padrão.
+    color: variables.$textColorWhite;
+    list-style: none;
+}
+
+.container{ //Estilização do layout da página.
+    max-width: 960px; //Tamanho máximo do container.
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px){ //Responsivo - Smartphone.
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px){ //Responsivo - Tablet.
+        max-width: 90%;
+    }
+}

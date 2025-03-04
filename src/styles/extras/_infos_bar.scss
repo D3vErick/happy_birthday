@@ -1,0 +1,44 @@
+@use 'variables';
+
+.infos-bar{ //Estilização da barra de informações do evento.
+    padding: 16px 24px;
+    background-color: variables.$textColorWhite; //Cor: Branco.
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &__infos{ //Alinhamento dos itens na mesma linha com espaçamento de 40px.
+        display: flex;
+        gap: 40px;
+        list-style: none;
+
+        &__item{
+            font-size: 14px;
+            color: variables.$textColorBlack; //Cor: Preto.
+
+            b{
+                color: variables.$textColorBlack; //Cor: Preto.
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 640px){ //Responsivo - Smartphone.
+        display: block; //Muda o alinhamento para sequencial - um a baixo do outro.
+
+        &__infos{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+    
+    @media (max-width: 1024px){ //Responsivo - Tablet.
+        &__infos{
+            gap: 16px;
+        }
+    }
+}

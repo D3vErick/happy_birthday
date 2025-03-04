@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="shortcut icon" href="images/e_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>About Me!</title>
+</head>
+<body>
+    <header class="hero"> <!--Ínicio do cabeçalho.-->
+        <div class="container">
+            <img class="hero__logo" src="images/Aglaea_icon.jpg" alt="Foto de perfil: Personagem Aglaea">
+            <p class="hero__text">
+                O maior evento do <strong>Brasil</strong> vulgo <strong>Meu Aniversário</strong> começa em <b><span id="timer"></span></b>
+            </p>
+            <div class="infos-bar"> <!--Informações do evento.-->
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização -</b>
+                        Edifício Akivili, Sonhópolis - Penacony <!--Localização fictícia.-->
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Presentes -</b>
+                        Não precisa trazer nada, mas se trouxer eu agradeço!
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Data -</b>
+                        18/10/2025 às 14:00hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary"> <!--Botão fictício.-->
+                    Vou Comparecer!
+                </a>
+            </div>
+        </div>
+    </header> <!--Fim do cabeçalho.-->
+
+    <section class="event event--about-me"> <!--Primeiro evento.-->
+        <div class="container" data-aos="zoom-in-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Sobre mim -</h2>
+                <p class="event__details__description">
+                    Estudando <strong>programação</strong> desde o final de 2023!<br><br>
+                    Minha cor favorita é o amarelo dourado (acho que deu para perceber) e a Aglaea, personagem ao lado, tem justamente
+                    essas cores como primarias, inclusive sua história é sobre ela ser uma semideusa e como ela se esforça para proteger o povo,
+                    mesmo que tenha que tomar decisões não muito... "éticas".
+                </p>
+            </div>
+            <img class="event__image" src="images/Aglaea_fullbody.webp" alt="Aglaea corpo inteiro"> <!--Imagem ilustrativa.-->
+        </div>
+    </section>
+
+    <section class="event event--about-task"> <!--Primeiro evento.-->
+        <div class="container" data-aos="zoom-in-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Sobre este exercício -</h2>
+                <p class="event__details__description">
+                    Este é um exercício cujo o foco é no contador regressivo que mostra o tempo restante da data atual
+                    de seu computador até a data do evento pré-definido, caso a data pré-selecionada já tiver passado, 
+                    uma mensagem de evento encerrado aparecerá, foi divertido fazer isso. <br><br> 
+                    ps: espero que não tenha problema nas piadas que eu coloquei :D
+                </p>
+            </div>
+            <img class="event__image" src="images/uepaa.jpg" alt="Eu faço compXtaria"> <!--Imagem ilustrativa.-->
+        </div>
+    </section>
+
+    <section class="event event--about-hb"> <!--Primeiro evento.-->
+        <div class="container" data-aos="zoom-in-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Sobre o ANIVERSÁRIO!!!!! -</h2>
+                <p class="event__details__description">
+                    Faço 22 anos esse ano, que loucura!!! <br> Até parece que o dia que eu nasci foi a 22 anos atrás, e o mais engraçado
+                    é que foi mesmo!!
+                </p>
+            </div>
+            <video class="event__image" controls="controls" src="images/feliz aniversario.mp4"></video>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>
